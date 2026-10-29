@@ -1,0 +1,194 @@
+/* Base Reset & Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+    background-color: #1c4e80;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h1 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    font-weight: normal;
+}
+
+/* Flexbox Navigation */
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    background-color: #262626;
+    padding: 0.75rem 1rem;
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+/* Main Layout Area */
+main {
+    flex: 1;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+main > h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+    color: #222;
+}
+
+/* CSS Grid for Main Content Columns */
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Card Styling */
+.card {
+    background-color: #fff;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.card-header {
+    background-color: #1c4e80;
+    color: #fff;
+    text-align: center;
+    padding: 0.75rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.card-content {
+    padding: 1.25rem;
+}
+
+/* About Me Content Layout */
+.about-flex {
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.about-flex p {
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.profile-img {
+    width: 120px;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    flex-shrink: 0;
+}
+
+.section-title {
+    text-align: center;
+    margin: 1.5rem 0 1rem 0;
+    font-size: 1.1rem;
+    color: #1c4e80;
+}
+
+.country-flex {
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+}
+
+.country-flex p {
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.flag-container {
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.flag-img {
+    width: 110px;
+    height: auto;
+    border: 1px solid #ddd;
+}
+
+.flag-caption {
+    display: block;
+    font-size: 0.75rem;
+    font-style: italic;
+    color: #666;
+    margin-top: 0.25rem;
+}
+
+/* Web Dev Resources List */
+.resource-list {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.resource-list li {
+    margin-bottom: 0.75rem;
+}
+
+.resource-list a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.resource-list a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #1c4e80;
+    color: #fff;
+    text-align: center;
+    padding: 1.25rem 1rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin-bottom: 0.25rem;
+}
+
+.footer-mod {
+    color: #fde047;
+    font-size: 0.8rem;
+}

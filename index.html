@@ -3,9 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131: Dynamic Web Fundamentals - David Inkoom </title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD 131 - David Inkoom</h1>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals</h1>
+        <nav class="navigation">
+            <a href="#">LinkedIn</a>
+            <a href="#">I-Learn</a>
+            <a href="#">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>David Inkoom</h2>
+        
+        <div class="grid-container">
+            <section class="card">
+                <header class="card-header">About Me</header>
+                <div class="card-content">
+                    <div class="about-flex">
+                        <p>Hello! My name is David Inkoom, and I am from Tema, Ghana. I am a software development student at BYU Pathway Worldwide. I enjoy coding, playing football, and watching history documentaries. I am excited about this new journey, and it has always been a dream of mine to pursue a career in software development. I look forward to a journey filled with life challenges, opportunities, and blessed encounters that will help me grow and expand my knowledge of software development.</p>
+                        <img src="images/profile.jpg" alt="David Inkoom portrait" class="profile-img">
+                    </div>
+
+                    <h3 class="section-title">Tema, Ghana.</h3>
+                    <div class="country-flex">
+                        <div class="flag-container">
+                            <img src="images/flag.jpg" alt="Official Flag of Ghana" class="flag-img">
+                            <span class="flag-caption">Official Flag of Ghana</span>
+                        </div>
+                    <p>Ghana is uniquely positioned close to the center of the world's coordinates. Both the Prime Meridian (0° longitude) and the Equator's proximity mean it sits very close to where the northern, southern, eastern, and western hemispheres meet (passing right through the industrial city of Tema)..</p>
+                    </div>
+                </div>
+            </section>
+            <section class="card">
+                <header class="card-header">Web Dev Resources</header>
+                <div class="card-content">
+                    <ul class="resource-list">
+                        <li><a href="#">Dev.to Community</a></li>
+                        <li><a href="#">Smashing Magazine</a></li>
+                        <li><a href="#">CSS Tricks</a></li>
+                        <li><a href="#">W3 Schools</a></li>
+                        <li><a href="#">Udemy</a></li>
+                        <li><a href="#">Lorem Picsum Image Placeholder</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🌸 David Inkoom 🌸 Ghana</p>
+        <p class="footer-mod">Last Modification: <span id="lastModified"></span></p>  
+    </footer>
 </body>
 </html>
