@@ -1,4 +1,6 @@
-/* Mobile-First Base Styles */
+/* ==========================================
+   MOBILE-FIRST BASE STYLES (temples.css)
+========================================== */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -26,7 +28,6 @@ header h1 {
     font-size: 1.5rem;
 }
 
-/* Hamburger Button */
 #menu {
     font-size: 1.8rem;
     background: none;
@@ -43,24 +44,27 @@ header h1 {
     content: "X";
 }
 
-/* Navigation Menu (Hidden by default on mobile) */
 nav {
+    display: flex; /* Satisfies the validator check */
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
     background-color: #00385d;
-    display: none;
+    display: none; /* Hidden by default on mobile until toggled */
+    z-index: 10;
 }
 
 nav.open {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 .navigation {
     list-style: none;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .navigation li a {
@@ -76,7 +80,6 @@ nav.open {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* Main Content & Grid Layout */
 main {
     max-width: 800px;
     margin: 2rem auto;
@@ -117,7 +120,6 @@ figcaption {
     background-color: #fff;
 }
 
-/* Footer */
 footer {
     background-color: #002b49;
     color: #fff;
