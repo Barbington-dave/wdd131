@@ -1,4 +1,4 @@
-// Toggle Hamburger Menu
+
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('nav');
 
@@ -7,11 +7,11 @@ hamButton.addEventListener('click', () => {
     hamButton.classList.toggle('open');
 });
 
-// Dynamic Footer Dates
-const currentYearSpan = document.querySelector('#currentyear');
-const lastModifiedParagraph = document.querySelector('#lastModified');
 
+const currentYearSpan = document.querySelector('#currentyear');
 const today = new Date();
 currentYearSpan.textContent = today.getFullYear();
 
+
+const lastModifiedParagraph = document.querySelector('#lastModified');
 lastModifiedParagraph.textContent = `Last Modification: ${document.lastModified}`;
