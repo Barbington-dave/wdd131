@@ -1,0 +1,136 @@
+/* Mobile-First Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #002b49;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+/* Hamburger Button */
+#menu {
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+/* Navigation Menu (Hidden by default on mobile) */
+nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #00385d;
+    display: none;
+}
+
+nav.open {
+    display: block;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.navigation li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Main Content & Grid Layout */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #002b49;
+}
+
+.res-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+figure {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    padding: 0.75rem;
+    font-weight: 700;
+    color: #002b49;
+    background-color: #fff;
+}
+
+/* Footer */
+footer {
+    background-color: #002b49;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+#lastModified {
+    color: #ffd700;
+}

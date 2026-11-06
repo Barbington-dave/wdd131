@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Temple Album - David Inkoom</title>
+    <meta name="description" content="Temple album page showcasing multiple temples responsive across devices for WDD 131.">
+    <meta name="author" content="David Inkoom">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 768px)">
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu" aria-label="Open Navigation Menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" title="Home">Home</a></li>
+                <li><a href="#" title="Old Temples">Old</a></li>
+                <li><a href="#" title="New Temples">New</a></li>
+                <li><a href="#" title="Large Temples">Large</a></li>
+                <li><a href="#" title="Small Temples">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Temple Gallery</h2>
+        <div class="res-grid">
+            <figure>
+        <img src="images/temple.jpg" alt="Aba Nigeria Temple" loading="lazy">
+        <figcaption>Aba Nigeria Temple</figcaption>
+    </figure>
+    <figure>
+        <img src="images/temple.jpg" alt="Accra Ghana Temple" loading="lazy">
+        <figcaption>Accra Ghana Temple</figcaption>
+    </figure>
+    <figure>
+        <img src="images/temple.jpg" alt="Salt Lake Temple" loading="lazy">
+        <figcaption>Salt Lake Temple</figcaption>
+    </figure>
+    <figure>
+        <img src="images/temple.jpg" alt="Rome Italy Temple" loading="lazy">
+        <figcaption>Rome Italy Temple</figcaption>
+    </figure>
+    <figure>
+        <img src="images/temple.jpg" alt="Tokyo Japan Temple" loading="lazy">
+        <figcaption>Tokyo Japan Temple</figcaption>
+    </figure>
+    <figure>
+        <img src="images/temple.jpg" alt="Paris France Temple" loading="lazy">
+        <figcaption>Paris France Temple</figcaption>
+    </figure>
+    <figure>
+        <img src="images/temple.jpg" alt="Sydney Australia Temple" loading="lazy">
+        <figcaption>Sydney Australia Temple</figcaption>
+    </figure>
+    <figure>
+        <img src="images/temple.jpg" alt="Johannesburg South Africa Temple" loading="lazy">
+        <figcaption>Johannesburg South Africa Temple</figcaption>
+    </figure>
+    <figure>
+        <img src="images/temple.jpg" alt="Madrid Spain Temple" loading="lazy">
+        <figcaption>Madrid Spain Temple</figcaption>
+    </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | David Inkoom | Tema, Ghana</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
