@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Filtered Temple Album - David Inkoom</title>
+    <meta name="description" content="Dynamic and filterable temple album page showcasing temples across the world for WDD 131.">
+    <meta name="author" content="David Inkoom">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="screen and (min-width: 768px)">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu" aria-label="Open Navigation Menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" id="home" title="Home">Home</a></li>
+                <li><a href="#" id="old" title="Old Temples">Old</a></li>
+                <li><a href="#" id="new" title="New Temples">New</a></li>
+                <li><a href="#" id="large" title="Large Temples">Large</a></li>
+                <li><a href="#" id="small" title="Small Temples">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 id="category-title">Home</h2>
+        <div class="res-grid"></div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | David Inkoom | Tema, Ghana</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
