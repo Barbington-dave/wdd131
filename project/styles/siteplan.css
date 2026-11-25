@@ -1,0 +1,104 @@
+:root {
+    --primary-color: #0B2545;
+    --accent-color: #D9822B;
+    --bg-color: #F7F9FB;
+    --surface-color: #FFFFFF;
+    --text-color: #1B263B;
+    --muted-border: #D8E1EB;
+    --heading-font: "Montserrat", sans-serif;
+    --body-font: "Open Sans", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--body-font);
+    font-size: 1rem;
+    line-height: 1.65;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+header,
+footer {
+    background-color: var(--primary-color);
+    color: var(--surface-color);
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+header p,
+footer p {
+    margin: 0.25rem 0 0;
+    color: var(--surface-color);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    line-height: 1.3;
+    margin-top: 0;
+}
+
+header h1 {
+    color: var(--surface-color);
+    font-size: clamp(1.5rem, 3vw, 2.1rem);
+    margin-bottom: 0.35rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid var(--accent-color);
+    margin-bottom: 0.9rem;
+}
+
+h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.6rem;
+}
+
+main {
+    max-width: 920px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    gap: 1.5rem;
+}
+
+section {
+    background-color: var(--surface-color);
+    border-left: 5px solid var(--accent-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(11, 37, 69, 0.07);
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0.85rem;
+}
+
+ul {
+    margin: 0.5rem 0 0;
+    padding-left: 1.25rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+code {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    padding: 0.15rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.92em;
+}
