@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Product Review Form for submitting product ratings, installation dates, and feedback.">
+  <meta name="author" content="David Inkoom">
+  <title>Product Review Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/form.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Product Review</h1>
+  </header>
+
+  <main>
+    <form method="get" action="review.html" class="review-form">
+      <!-- Product Name -->
+      <div class="form-group">
+        <label for="productName">Product Name <span class="required-mark">*</span></label>
+        <select id="productName" name="productName" required>
+          <option value="" disabled selected>Select a Product ...</option>
+        </select>
+      </div>
+
+      <!-- Overall Rating -->
+      <fieldset class="form-group rating-group">
+        <legend>Overall Rating <span class="required-mark">*</span></legend>
+        <div class="star-rating">
+          <div class="rating-option">
+            <label for="rating1">☆</label>
+            <input type="radio" id="rating1" name="rating" value="1" required>
+          </div>
+          <div class="rating-option">
+            <label for="rating2">☆☆</label>
+            <input type="radio" id="rating2" name="rating" value="2" required>
+          </div>
+          <div class="rating-option">
+            <label for="rating3">☆☆☆</label>
+            <input type="radio" id="rating3" name="rating" value="3" required>
+          </div>
+          <div class="rating-option">
+            <label for="rating4">☆☆☆☆</label>
+            <input type="radio" id="rating4" name="rating" value="4" required>
+          </div>
+          <div class="rating-option">
+            <label for="rating5">☆☆☆☆☆</label>
+            <input type="radio" id="rating5" name="rating" value="5" required>
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- Date of Installation -->
+      <div class="form-group">
+        <label for="installDate">Date of Installation <span class="required-mark">*</span></label>
+        <input type="date" id="installDate" name="installDate" required>
+      </div>
+
+      <!-- Useful Features -->
+      <fieldset class="form-group checkbox-group">
+        <legend>Which features did you find useful in the product? <span class="hint">(Check all that apply)</span></legend>
+        <label class="checkbox-label" for="featureDesign">
+          <input type="checkbox" id="featureDesign" name="features" value="design">
+          Design
+        </label>
+        <label class="checkbox-label" for="featureDurability">
+          <input type="checkbox" id="featureDurability" name="features" value="durability">
+          Durability
+        </label>
+        <label class="checkbox-label" for="featureEase">
+          <input type="checkbox" id="featureEase" name="features" value="ease-of-use">
+          Ease of Use
+        </label>
+        <label class="checkbox-label" for="featurePerformance">
+          <input type="checkbox" id="featurePerformance" name="features" value="performance">
+          Performance
+        </label>
+      </fieldset>
+
+      <!-- Written Review -->
+      <div class="form-group">
+        <label for="writtenReview">Written Review <span class="hint">(Optional)</span></label>
+        <textarea id="writtenReview" name="writtenReview" rows="5" placeholder="Share your experience with this product..."></textarea>
+      </div>
+
+      <!-- User Name -->
+      <div class="form-group">
+        <label for="userName">Your Name <span class="hint">(Optional)</span></label>
+        <input type="text" id="userName" name="userName" autocomplete="name">
+      </div>
+
+      <!-- Submit Button -->
+      <div class="form-group">
+        <input type="submit" value="Post Review" class="submit-btn">
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <p>©<span id="currentyear"></span> | David Inkoom | Ghana</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
