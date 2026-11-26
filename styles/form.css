@@ -47,7 +47,7 @@ main {
   background-color: var(--surface-color);
   padding: 1.75rem;
   border-radius: var(--radius);
-  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.08);
+  box-shadow: 0 2px 10px #0f172a14;
 }
 
 .form-group {
@@ -169,4 +169,15 @@ textarea {
 footer p {
   margin: 0.25rem 0;
   font-size: 0.9rem;
+}
+
+@media (min-width: 640px) {
+  main {
+    margin: 2.5rem auto;
+    padding: 0 1.5rem;
+  }
+
+  .review-form {
+    padding: 2.25rem;
+  }
 }
